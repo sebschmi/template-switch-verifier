@@ -10,6 +10,7 @@ edition = "2021"
 [dependencies]
 lib_tsalign = { version = "0.4.1", features = ["serde"] }
 serde = { version = "1.0.213", features = ["derive"] }
+serde-value = "0.7.0"
 toml = "0.8.19"
 clap = { version = "4.5.20", features = ["derive"] }
 log = "0.4.22"
