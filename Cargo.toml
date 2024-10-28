@@ -1,0 +1,10 @@
+[package]
+name = "tsverify"
+description = "Compare alignments produced by tsalign"
+authors = ["Sebastian Schmidt <sebastian.schmidt@helsinki.fi>"]
+license = "BSD-2-Clause"
+repository = "https://github.com/ISibboI/template-switch-verifier.git"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
