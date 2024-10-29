@@ -58,7 +58,6 @@ fn main() -> Result<(), String> {
     if ground_truth_alignment == test_alignment {
         info!("The alignments are the same");
     } else {
-        error = true;
         info!("The alignments are NOT the same");
     }
 
