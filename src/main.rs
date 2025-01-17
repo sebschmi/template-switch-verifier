@@ -44,14 +44,24 @@ fn main() -> Result<(), String> {
     );
     let ground_truth_statistics = read_to_string(&cli.ground_truth_statistics).unwrap();
     let ground_truth_statistics: StatisticsFile = toml::from_str(&ground_truth_statistics).unwrap();
-    let ground_truth_alignment = ground_truth_statistics.statistics.alignment;
-    let ground_truth_statistics = ground_truth_statistics.statistics.statistics;
+    let AlignmentResult::WithTarget {
+        alignment: ground_truth_alignment,
+        statistics: ground_truth_statistics,
+    } = ground_truth_statistics.statistics
+    else {
+        return Err("Ground truth alignment missing".to_string());
+    };
 
     info!("Loading test statistics from {:?}", cli.test_statistics);
     let test_statistics = read_to_string(&cli.test_statistics).unwrap();
     let test_statistics: StatisticsFile = toml::from_str(&test_statistics).unwrap();
-    let test_alignment = test_statistics.statistics.alignment;
-    let test_statistics = test_statistics.statistics.statistics;
+    let AlignmentResult::WithTarget {
+        alignment: test_alignment,
+        statistics: test_statistics,
+    } = test_statistics.statistics
+    else {
+        return Err("Test alignment missing".to_string());
+    };
 
     let mut error = false;
 
