@@ -43,7 +43,8 @@ fn main() -> Result<(), String> {
         cli.ground_truth_statistics
     );
     let ground_truth_statistics = read_to_string(&cli.ground_truth_statistics).unwrap();
-    let ground_truth_statistics: StatisticsFile = toml::from_str(&ground_truth_statistics).unwrap();
+    let ground_truth_statistics: StatisticsFile = toml::from_str(&ground_truth_statistics)
+        .unwrap_or_else(|error| panic!("Error parsing ground truth statistics: {error}"));
     let AlignmentResult::WithTarget {
         alignment: ground_truth_alignment,
         statistics: ground_truth_statistics,
@@ -54,7 +55,8 @@ fn main() -> Result<(), String> {
 
     info!("Loading test statistics from {:?}", cli.test_statistics);
     let test_statistics = read_to_string(&cli.test_statistics).unwrap();
-    let test_statistics: StatisticsFile = toml::from_str(&test_statistics).unwrap();
+    let test_statistics: StatisticsFile = toml::from_str(&test_statistics)
+        .unwrap_or_else(|error| panic!("Error parsing test statistics: {error}"));
     let AlignmentResult::WithTarget {
         alignment: test_alignment,
         statistics: test_statistics,
