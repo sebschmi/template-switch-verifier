@@ -20,7 +20,6 @@ struct Cli {
 
 #[derive(Debug, Clone, Eq, PartialEq, Serialize, Deserialize)]
 struct StatisticsFile {
-    #[serde(flatten)]
     pub statistics: AlignmentResult<AlignmentType>,
 
     #[serde(flatten)]
