@@ -247,9 +247,9 @@ checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "lib_tsalign"
-version = "0.8.1"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "602564e0abe44b79cd68c11df6c7b85f511b6f87b5f333525e89d5ef5f1313fa"
+checksum = "ad1d2d56a9cf7200bad14163b837118c8d1778ce062fb2bae5b622f6ec9c0edc"
 dependencies = [
  "binary-heap-plus",
  "compact-genome",
@@ -666,9 +666,9 @@ dependencies = [
 
 [[package]]
 name = "unicode-ident"
-version = "1.0.14"
+version = "1.0.15"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "adb9e6ca4f869e1180728b7950e35922a7fc6397f7b641499e8f3ef06e50dc83"
+checksum = "11cd88e12b17c6494200a9c1b683a04fcac9573ed74cd1b62aeb2727c5592243"
 
 [[package]]
 name = "utf8parse"
