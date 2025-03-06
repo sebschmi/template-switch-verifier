@@ -1,8 +1,9 @@
 use std::{collections::HashMap, fs::read_to_string, path::PathBuf};
 
 use clap::Parser;
-use lib_tsalign::a_star_aligner::{
-    alignment_result::AlignmentResult, template_switch_distance::AlignmentType,
+use lib_tsalign::{
+    a_star_aligner::{alignment_result::AlignmentResult, template_switch_distance::AlignmentType},
+    costs::U64Cost,
 };
 use log::{info, LevelFilter};
 use serde::{Deserialize, Serialize};
@@ -20,7 +21,7 @@ struct Cli {
 
 #[derive(Debug, Clone, Eq, PartialEq, Serialize, Deserialize)]
 struct StatisticsFile {
-    pub statistics: AlignmentResult<AlignmentType>,
+    pub statistics: AlignmentResult<AlignmentType, U64Cost>,
 
     #[serde(flatten)]
     pub parameters: HashMap<String, Value>,
