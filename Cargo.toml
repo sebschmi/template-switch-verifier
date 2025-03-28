@@ -5,7 +5,7 @@ authors = ["Sebastian Schmidt <sebastian.schmidt@helsinki.fi>"]
 license = "BSD-2-Clause"
 repository = "https://github.com/ISibboI/template-switch-verifier.git"
 version = "0.2.0"
-edition = "2021"
+edition = "2024"
 
 [dependencies]
 lib_tsalign = { version = "0.14.0", features = ["serde"] }

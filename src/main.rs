@@ -5,7 +5,7 @@ use lib_tsalign::{
     a_star_aligner::{alignment_result::AlignmentResult, template_switch_distance::AlignmentType},
     costs::U64Cost,
 };
-use log::{info, LevelFilter};
+use log::{LevelFilter, info};
 use serde::{Deserialize, Serialize};
 use serde_value::Value;
 use simplelog::{ColorChoice, TermLogger, TerminalMode};
