@@ -8,10 +8,10 @@ version = "0.2.0"
 edition = "2024"
 
 [dependencies]
-lib_tsalign = { version = "0.14.5", features = ["serde"] }
+lib_tsalign = { version = "0.15.0", features = ["serde"] }
 serde = { version = "1.0.219", features = ["derive"] }
 serde-value = "0.7.0"
-toml = "0.8.20"
-clap = { version = "4.5.36", features = ["derive"] }
+toml = "0.8.22"
+clap = { version = "4.5.37", features = ["derive"] }
 log = "0.4.27"
 simplelog = "0.12.2"
