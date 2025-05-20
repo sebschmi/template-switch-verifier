@@ -81,9 +81,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "4.5.37"
+version = "4.5.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eccb054f56cbd38340b380d4a8e69ef1f02f1af43db2f0cc817a4774d80ae071"
+checksum = "ed93b9805f8ba930df42c2590f05453d5ec36cbb85d018868a5b24d31f6ac000"
 dependencies = [
  "clap_builder",
  "clap_derive",
@@ -91,9 +91,9 @@ dependencies = [
 
 [[package]]
 name = "clap_builder"
-version = "4.5.37"
+version = "4.5.38"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "efd9466fac8543255d3b1fcad4762c5e116ffe808c8a3043d4263cd4fd4862a2"
+checksum = "379026ff283facf611b0ea629334361c4211d1b12ee01024eec1591133b04120"
 dependencies = [
  "anstream",
  "anstyle",
@@ -127,9 +127,9 @@ checksum = "5b63caa9aa9397e2d9480a9b13673856c78d8ac123288526c37d7839f2a86990"
 
 [[package]]
 name = "compact-genome"
-version = "12.2.0"
+version = "12.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1f512b52ff4bfc23a1544c203b11c1fa6ae30edc9bde2e58806ff63ad8a4987d"
+checksum = "503cda65a29118e687d71d64d7a3c1e4d21f235a3aa55b22cd2902a99d04d9ff"
 dependencies = [
  "bitvec",
  "itertools",
@@ -186,9 +186,9 @@ checksum = "e6d5a32815ae3f33302d95fdcb2ce17862f8c65363dcfd29360480ba1001fc9c"
 
 [[package]]
 name = "generic_a_star"
-version = "0.15.0"
+version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abaa4540d1c10962c1bc0cd6ee1f23ed8028efc75a8801e474be994d99737758"
+checksum = "3644110aa6efdf3aaef130365e6a73bd0c88fce63eb9c1e188e1310fba557031"
 dependencies = [
  "binary-heap-plus",
  "deterministic_default_hasher",
@@ -248,9 +248,9 @@ checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "lib_tsalign"
-version = "0.15.0"
+version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "524fc407d494774f33141e3623a4daef4894de60d905b0f8e2e5fec04f7f9aaf"
+checksum = "0928dc405a4fc2c5b5f6aadc9a9c21fabafad81f6b26d668da197c582eb8260c"
 dependencies = [
  "binary-heap-plus",
  "compact-genome",
@@ -461,9 +461,9 @@ dependencies = [
 
 [[package]]
 name = "seed_chain"
-version = "0.15.0"
+version = "0.18.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43241dfaac112cb7654d8a42cbece55751eeb9b910c320d2ecc5915e8ff8121a"
+checksum = "07391779c18d69235d862e170a40b029e303aaf2838397da112cf2fa805505fe"
 dependencies = [
  "compact-genome",
  "generic_a_star",
